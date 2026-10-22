@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" class="pending" data-page="puzzle">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PicTiles – a puzzle from a friend</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f2f5f8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f141b" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:title" content="PicTiles – a puzzle from a friend">
+<meta property="og:description" content="Someone sent you a nonogram made from their photo. You'll see the picture once you solve it.">
+<meta property="og:image" content="https://pictiles.site/og.jpg">
+<link rel="stylesheet" href="/site.css">
+<noscript><style>html.pending body { visibility: visible; }</style></noscript>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="/" aria-label="PicTiles">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#ff6a4d"/><rect x="8" y="8" width="10.5" height="10.5" rx="3" fill="#fff"/><rect x="21.5" y="8" width="10.5" height="10.5" rx="3" fill="#fff" opacity=".55"/><rect x="8" y="21.5" width="10.5" height="10.5" rx="3" fill="#fff" opacity=".55"/><rect x="21.5" y="21.5" width="10.5" height="10.5" rx="3" fill="#fff"/></svg>
+      <span class="wordmark">Pic<b>Tiles</b></span>
+    </a>
+    <label class="lang"><span class="sr" hidden>Language</span>
+      <select id="langSel" aria-label="Language">
+        <option value="cs">Čeština</option><option value="en">English</option><option value="de">Deutsch</option>
+        <option value="es">Español</option><option value="pt">Português</option><option value="ja">日本語</option>
+      </select>
+    </label>
+  </header>
+
+  <main class="gift">
+    <div class="gift-tiles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="eyebrow" data-t="pEyebrow">A puzzle from a friend</div>
+    <h1 data-t="pH1">Someone sent you a puzzle</h1>
+    <p class="lead" data-t="pLead">It's a nonogram made from their photo. You'll see what's in the picture once you solve it.</p>
+
+    <div id="hasCode">
+      <a class="store open-app" id="openApp" href="#" hidden>
+        <svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="15" fill="#ffc233"/><path d="M12 9.5v11l9-5.5z" fill="#19212f"/></svg>
+        <span><small data-t="pOpenSmall">Solve it in</small><strong>PicTiles</strong></span>
+      </a>
+      <div class="code-card">
+        <label for="code" data-t="pCode">Puzzle code</label>
+        <textarea id="code" readonly rows="3"></textarea>
+        <button class="copy" id="copy" type="button" data-t="pCopy">Copy code</button>
+        <p class="note" data-t="pHow">In PicTiles, open Photo puzzle, tap "I have a code or link from a friend" and paste the code.</p>
+      </div>
+    </div>
+    <p class="note" id="noCode" hidden data-t="pMissing">The puzzle code is missing from this link. Ask your friend to send it again.</p>
+
+    <div class="get">
+      <b data-t="pNoApp">Don't have PicTiles yet?</b>
+      <span class="store" role="note">
+        <svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="15" fill="#ffc233"/><path d="M12 9.5v11l9-5.5z" fill="#19212f"/></svg>
+        <span><small data-t="storeSmall">Coming soon on</small><strong data-t="storeBig">Google Play</strong></span>
+      </span>
+    </div>
+  </main>
+
+  <footer>
+    <div class="cols">
+      <a href="/" data-t="back" data-keep-lang>← Back to the home page</a>
+      <nav><a href="/privacy.html" data-t="privacy" data-keep-lang>Privacy policy</a></nav>
+    </div>
+  </footer>
+</div>
+<script src="/site.js"></script>
+<script>
+(function () {
+  "use strict";
+  var h = location.hash || "", code = h.indexOf("#p") === 0 ? h.slice(2) : "";
+  var ok = /^[A-Za-z0-9_-]{20,}$/.test(code);
+  document.getElementById("hasCode").hidden = !ok;
+  document.getElementById("noCode").hidden = ok;
+  if (!ok) return;
+  var box = document.getElementById("code");
+  box.value = code;
+  // on Android, Chrome opens the app straight away when it is installed
+  if (/Android/i.test(navigator.userAgent)) {
+    var a = document.getElementById("openApp");
+    a.href = "intent://pictiles.site/p/#p" + code + "#Intent;scheme=https;package=site.pictiles.app;end";
+    a.hidden = false;
+  }
+  var btn = document.getElementById("copy");
+  btn.addEventListener("click", function () {
+    var done = function () { btn.textContent = btn.getAttribute("data-done") || "✓"; btn.classList.add("done"); };
+    try { navigator.clipboard.writeText(code).then(done, function () { box.select(); }); } catch (e) { box.focus(); box.select(); }
+  });
+})();
+</script>
+</body>
+</html>

@@ -5,6 +5,7 @@
   var MAIL = '<a href="mailto:info@pictiles.site">info@pictiles.site</a>';
   var T = {
     cs: {
+      pTitle: "PicTiles – hádanka od kamaráda", pEyebrow: "Hádanka od kamaráda", pH1: "Někdo ti poslal hádanku", pLead: "Je to nonogram z jeho fotky. Co je na obrázku, uvidíš, až ho vyřešíš.", pOpenSmall: "Vyřeš ji v", pCode: "Kód hádanky", pCopy: "Zkopírovat kód", pCopied: "Zkopírováno ✓", pHow: "V PicTiles otevři Hádanka z fotky, klepni na „Mám kód nebo odkaz od kamaráda“ a kód vlož.", pMissing: "V tomhle odkazu chybí kód hádanky. Popros kamaráda, ať ti ho pošle znovu.", pNoApp: "Ještě nemáš PicTiles?",
       title: "PicTiles – logická hra nonogram",
       desc: "PicTiles je logická hra nonogram: vybarvuj políčka podle čísel a odhal skrytý obrázek. 1 000 obrázků, barevné hádanky, denní výzva a hádanky z vlastních fotek.",
       eyebrow: "Logická hra nonogram",
@@ -29,6 +30,7 @@
       back: "← Zpět na úvod", privacyTitle: "Zásady ochrany osobních údajů – PicTiles"
     },
     en: {
+      pTitle: "PicTiles – a puzzle from a friend", pEyebrow: "A puzzle from a friend", pH1: "Someone sent you a puzzle", pLead: "It's a nonogram made from their photo. You'll see what's in the picture once you solve it.", pOpenSmall: "Solve it in", pCode: "Puzzle code", pCopy: "Copy code", pCopied: "Copied ✓", pHow: "In PicTiles, open Photo puzzle, tap “I have a code or link from a friend” and paste the code.", pMissing: "The puzzle code is missing from this link. Ask your friend to send it again.", pNoApp: "Don't have PicTiles yet?",
       title: "PicTiles – nonogram puzzle game",
       desc: "PicTiles is a nonogram puzzle game: fill in squares by the numbers and reveal the hidden picture. 1,000 pictures, colour puzzles, a daily challenge and puzzles from your own photos.",
       eyebrow: "Nonogram puzzle game",
@@ -53,6 +55,7 @@
       back: "← Back to the home page", privacyTitle: "Privacy policy – PicTiles"
     },
     de: {
+      pTitle: "PicTiles – ein Rätsel von einem Freund", pEyebrow: "Rätsel von einem Freund", pH1: "Jemand hat dir ein Rätsel geschickt", pLead: "Es ist ein Nonogramm aus seinem Foto. Was darauf ist, siehst du, sobald du es gelöst hast.", pOpenSmall: "Löse es in", pCode: "Rätselcode", pCopy: "Code kopieren", pCopied: "Kopiert ✓", pHow: "Öffne in PicTiles „Rätsel aus Foto“, tippe auf „Ich habe einen Code oder Link“ und füge den Code ein.", pMissing: "In diesem Link fehlt der Rätselcode. Bitte deinen Freund, ihn noch einmal zu schicken.", pNoApp: "Du hast PicTiles noch nicht?",
       title: "PicTiles – Nonogramm-Rätselspiel",
       desc: "PicTiles ist ein Nonogramm-Rätselspiel: Felder nach Zahlen ausfüllen und das versteckte Bild aufdecken. 1.000 Bilder, Farbrätsel, ein Tagesrätsel und Rätsel aus eigenen Fotos.",
       eyebrow: "Nonogramm-Rätselspiel",
@@ -77,6 +80,7 @@
       back: "← Zurück zur Startseite", privacyTitle: "Datenschutzerklärung – PicTiles"
     },
     es: {
+      pTitle: "PicTiles – un puzle de un amigo", pEyebrow: "Puzle de un amigo", pH1: "Alguien te ha enviado un puzle", pLead: "Es un nonograma hecho con su foto. Verás lo que hay en la imagen cuando lo resuelvas.", pOpenSmall: "Resuélvelo en", pCode: "Código del puzle", pCopy: "Copiar código", pCopied: "Copiado ✓", pHow: "En PicTiles, abre Puzle de foto, toca «Tengo un código o enlace de un amigo» y pega el código.", pMissing: "A este enlace le falta el código del puzle. Pide a tu amigo que te lo envíe de nuevo.", pNoApp: "¿Aún no tienes PicTiles?",
       title: "PicTiles – juego de nonogramas",
       desc: "PicTiles es un juego de nonogramas: rellena casillas siguiendo los números y descubre la imagen oculta. 1000 imágenes, puzles de colores, un reto diario y puzles con tus propias fotos.",
       eyebrow: "Juego de nonogramas",
@@ -101,6 +105,7 @@
       back: "← Volver al inicio", privacyTitle: "Política de privacidad – PicTiles"
     },
     pt: {
+      pTitle: "PicTiles – um quebra-cabeça de um amigo", pEyebrow: "Quebra-cabeça de um amigo", pH1: "Alguém te enviou um quebra-cabeça", pLead: "É um nonograma feito com a foto dessa pessoa. Você vai ver o que tem na imagem quando resolver.", pOpenSmall: "Resolva no", pCode: "Código do quebra-cabeça", pCopy: "Copiar código", pCopied: "Copiado ✓", pHow: "No PicTiles, abra Quebra-cabeça de foto, toque em “Tenho um código ou link de um amigo” e cole o código.", pMissing: "Este link está sem o código do quebra-cabeça. Peça ao seu amigo para enviar de novo.", pNoApp: "Ainda não tem o PicTiles?",
       title: "PicTiles – jogo de nonogramas",
       desc: "PicTiles é um jogo de nonogramas: preencha os quadrados seguindo os números e revele a imagem escondida. 1.000 imagens, quebra-cabeças coloridos, um desafio diário e quebra-cabeças com suas próprias fotos.",
       eyebrow: "Jogo de nonogramas",
@@ -125,6 +130,7 @@
       back: "← Voltar ao início", privacyTitle: "Política de privacidade – PicTiles"
     },
     ja: {
+      pTitle: "PicTiles – 友だちからのパズル", pEyebrow: "友だちからのパズル", pH1: "パズルが届きました", pLead: "友だちの写真から作ったお絵かきロジックです。何の絵かは、解いたときにわかります。", pOpenSmall: "解くなら", pCode: "パズルのコード", pCopy: "コードをコピー", pCopied: "コピーしました ✓", pHow: "PicTilesで「写真パズル」を開き、「友だちのコードやリンクがある」をタップしてコードを貼り付けてください。", pMissing: "このリンクにはパズルのコードがありません。友だちにもう一度送ってもらってください。", pNoApp: "まだPicTilesを持っていませんか？",
       title: "PicTiles – ノノグラム（お絵かきロジック）パズル",
       desc: "PicTilesはノノグラムパズルゲームです。数字をヒントにマスを塗って、隠れた絵を完成させましょう。1000枚の絵、カラーパズル、デイリーチャレンジ、自分の写真からつくるパズル。",
       eyebrow: "ノノグラム パズルゲーム",
@@ -167,7 +173,7 @@
     var t = T[lang] || T.en, doc = document.documentElement;
     doc.lang = lang;
     var page = doc.getAttribute("data-page") || "home";
-    document.title = page === "privacy" ? t.privacyTitle : t.title;
+    document.title = page === "privacy" ? t.privacyTitle : page === "puzzle" ? t.pTitle : t.title;
     var md = document.querySelector('meta[name="description"]');
     if (md && page === "home") md.setAttribute("content", t.desc);
     document.querySelectorAll("[data-t]").forEach(function (el) { var k = el.getAttribute("data-t"); if (t[k] != null) el.textContent = t[k]; });
@@ -184,6 +190,8 @@
       var base = a.getAttribute("href").split("?")[0];
       a.setAttribute("href", base + "?lang=" + lang);
     });
+    var cp = document.getElementById("copy");
+    if (cp) { cp.setAttribute("data-done", t.pCopied); if (cp.classList.contains("done")) cp.textContent = t.pCopied; }
     var sel = document.getElementById("langSel");
     if (sel) sel.value = lang;
     doc.classList.remove("pending");
