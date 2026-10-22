@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" class="pending">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PicTiles – nonogram puzzle game</title>
+<meta name="description" content="PicTiles is a nonogram puzzle game: fill in squares by the numbers and reveal the hidden picture. 1,000 pictures, colour puzzles, a daily challenge and puzzles from your own photos.">
+<meta name="theme-color" content="#f2f5f8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f141b" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="PicTiles – nonogram puzzle game">
+<meta property="og:description" content="Fill in squares by the numbers and reveal the hidden picture.">
+<meta property="og:image" content="https://pictiles.site/og.jpg">
+<meta property="og:url" content="https://pictiles.site/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="site.css">
+<noscript><style>html.pending body { visibility: visible; }</style></noscript>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="./" aria-label="PicTiles">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#ff6a4d"/><rect x="8" y="8" width="10.5" height="10.5" rx="3" fill="#fff"/><rect x="21.5" y="8" width="10.5" height="10.5" rx="3" fill="#fff" opacity=".55"/><rect x="8" y="21.5" width="10.5" height="10.5" rx="3" fill="#fff" opacity=".55"/><rect x="21.5" y="21.5" width="10.5" height="10.5" rx="3" fill="#fff"/></svg>
+      <span class="wordmark">Pic<b>Tiles</b></span>
+    </a>
+    <label class="lang"><span class="sr" hidden>Language</span>
+      <select id="langSel" aria-label="Language">
+        <option value="cs">Čeština</option><option value="en">English</option><option value="de">Deutsch</option>
+        <option value="es">Español</option><option value="pt">Português</option><option value="ja">日本語</option>
+      </select>
+    </label>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <div class="eyebrow" data-t="eyebrow">Nonogram puzzle game</div>
+        <h1 data-html="h1">Reveal the picture, <em>square by square</em></h1>
+        <p class="lead" data-t="lead">The numbers next to each row and column tell you which squares to fill. A little logic, and a picture pops out of the grid.</p>
+        <span class="store" role="note">
+          <svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="15" fill="#ffc233"/><path d="M12 9.5v11l9-5.5z" fill="#19212f"/></svg>
+          <span><small data-t="storeSmall">Coming soon on</small><strong data-t="storeBig">Google Play</strong></span>
+        </span>
+        <p class="note" data-t="note">We're preparing the Android release. An iPhone version may follow later.</p>
+      </div>
+      <div class="phones" aria-hidden="true">
+        <div class="phone"><img data-shot="play" src="img/play-en.webp" alt="" width="640" height="1385"></div>
+        <div class="phone"><img data-shot="win" src="img/win-en.webp" alt="" width="640" height="1385"></div>
+      </div>
+    </div>
+
+    <section>
+      <h2 data-t="featTitle">What's inside</h2>
+      <div class="features">
+        <div class="feature"><div class="ic c1"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2" opacity=".6"/><rect x="3" y="13" width="8" height="8" rx="2" opacity=".6"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg></div>
+          <h3 data-t="f1t">1,000 pictures</h3><p data-t="f1d">Four difficulties from easy to extreme, from 5 × 5 to 20 × 20 squares.</p></div>
+        <div class="feature"><div class="ic c2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 0 18c1.4 0 2-1 2-2 0-1.5-1.2-1.8-1.2-3 0-1.1.9-2 2-2H17a4 4 0 0 0 4-4c0-3.9-4-7-9-7z"/><circle cx="7.5" cy="11.5" r="1.3" fill="currentColor"/><circle cx="10" cy="7.3" r="1.3" fill="currentColor"/><circle cx="15" cy="7.5" r="1.3" fill="currentColor"/></svg></div>
+          <h3 data-t="f2t">Colour puzzles</h3><p data-t="f2d">The numbers come in colours, and the pictures get even brighter.</p></div>
+        <div class="feature"><div class="ic c3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></div>
+          <h3 data-t="f3t">Daily challenge</h3><p data-t="f3d">A new puzzle every day: hard on weekdays, extreme at weekends.</p></div>
+        <div class="feature"><div class="ic c4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h1.8l1.4-2h4.6l1.4 2h1.8A2.5 2.5 0 0 1 20 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5z"/><circle cx="12" cy="13" r="3.6"/></svg></div>
+          <h3 data-t="f4t">A puzzle from your photo</h3><p data-t="f4d">Turn your own photo into a puzzle and send it to a friend. They see the picture once they solve it.</p></div>
+        <div class="feature"><div class="ic c5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8.5 20h7M10 17h4"/></svg></div>
+          <h3 data-t="f5t">Album, goals and trophies</h3><p data-t="f5d">Collect pictures by theme, complete daily goals and unlock trophies.</p></div>
+        <div class="feature"><div class="ic c6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></div>
+          <h3 data-t="f6t">Play anywhere</h3><p data-t="f6d">Works offline, in English, Czech, German, Spanish, Portuguese and Japanese.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 data-t="shotsTitle">Have a look</h2>
+      <div class="shots">
+        <figure class="shot" style="margin:0"><div class="phone"><img data-shot="play" data-alt="s1" src="img/play-en.webp" alt="" width="640" height="1385" loading="lazy"></div><p data-t="s1">Fill in by the numbers</p></figure>
+        <figure class="shot" style="margin:0"><div class="phone"><img data-shot="win" data-alt="s2" src="img/win-en.webp" alt="" width="640" height="1385" loading="lazy"></div><p data-t="s2">Reveal the picture</p></figure>
+        <figure class="shot" style="margin:0"><div class="phone"><img data-shot="levels" data-alt="s3" src="img/levels-en.webp" alt="" width="640" height="1385" loading="lazy"></div><p data-t="s3">1,000 levels</p></figure>
+      </div>
+    </section>
+
+    <section>
+      <h2 data-t="faqTitle">FAQ</h2>
+      <div class="faq">
+        <details><summary data-t="q1">Is the game free?</summary><p data-t="a1">Yes. It's supported by ads, and you can turn them off with a one-time purchase.</p></details>
+        <details><summary data-t="q2">Do I need the internet?</summary><p data-t="a2">No, the game works offline. A connection is only needed for ads and purchases.</p></details>
+        <details><summary data-t="q3">When does it come out?</summary><p data-t="a3">We're preparing the release on Google Play. An iPhone version may follow later.</p></details>
+        <details><summary data-t="q4">How can I contact you?</summary><p data-html="a4">Write to us at <a href="mailto:info@pictiles.site">info@pictiles.site</a>.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="cols">
+      <div>
+        <b data-t="operator">Operator</b><br>
+        Václav Kobl · <span data-t="ico">Company ID (IČO)</span> 24900907<br>
+        U Jeřábu 284, 252 06 Davle, <span data-t="country">Czech Republic</span>
+      </div>
+      <nav>
+        <a href="privacy.html" data-t="privacy" data-keep-lang>Privacy policy</a>
+        <a href="mailto:info@pictiles.site">info@pictiles.site</a>
+      </nav>
+    </div>
+    <p style="margin:18px 0 0">© <span id="year">2026</span> PicTiles</p>
+  </footer>
+</div>
+<script src="site.js"></script>
+</body>
+</html>
