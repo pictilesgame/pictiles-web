@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "site.pictiles.app",
+      "sha256_cert_fingerprints": [
+        "9B:09:45:AA:0B:C3:42:8D:85:F4:E4:E6:7C:AA:3D:61:04:34:03:9A:AD:69:AF:EC:54:43:8A:DD:4A:CD:E7:37",
+        "D7:FF:3D:7A:53:02:96:63:7D:72:F3:EE:1F:45:F7:64:53:35:C3:F8:14:16:CD:2F:A5:C3:BA:1F:6D:C1:A0:35"
+      ]
+    }
+  }
+]
